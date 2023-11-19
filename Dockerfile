@@ -10,8 +10,9 @@ COPY .mvn .mvn
 # Copy the Project Object Model (POM) file
 COPY pom.xml .
 
-# Build all the dependencies in preparation to go offline. This is a separate step so that
-# Docker will cache the dependencies if unchanged.
+# Build all the dependencies in preparation to go offline.
+# This is a separate step so that Docker will cache the dependencies if unchanged.
+RUN ./mvnw -N io.takari:maven:wrapper
 RUN ./mvnw dependency:go-offline -B
 
 # Copy the project source
