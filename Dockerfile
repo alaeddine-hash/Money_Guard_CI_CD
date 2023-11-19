@@ -1,4 +1,4 @@
 FROM openjdk:18
 EXPOSE 8081
-ADD target/site_de_planification.jar site_de_planification.jar
-ENTRYPOINT ["java", "-jar", "/site_de_planification.jar"]
+ADD target/money_guard_ci_cd.jar money_guard_ci_cd.jar
+ENTRYPOINT ["java", "-jar", "/money_guard_ci_cd.jar"]
