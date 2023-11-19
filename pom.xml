@@ -97,7 +97,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>MoneyGuard</finalName>
+		<finalName>money_guard_ci_cd</finalName>
 	</build>
 
 </project>
